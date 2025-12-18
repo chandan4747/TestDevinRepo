@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Designs by Kushi Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>Kushi Enterprises</h1>
+                <span class="tagline">Creative Designs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Creative Designs by Kushi Enterprises</h1>
+            <p>Transforming fabric into art with exquisite embroidery craftsmanship</p>
+            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">We offer a wide range of embroidery services to meet your needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧵</div>
+                    <h3>Custom Embroidery</h3>
+                    <p>Personalized designs tailored to your unique vision and requirements</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👔</div>
+                    <h3>Corporate Branding</h3>
+                    <p>Professional logo embroidery for uniforms, caps, and corporate merchandise</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👗</div>
+                    <h3>Fashion Embroidery</h3>
+                    <p>Elegant designs for traditional and contemporary fashion wear</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Home Décor</h3>
+                    <p>Beautiful embroidered pieces for cushions, curtains, and table linens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <p class="section-subtitle">A glimpse of our finest embroidery creations</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/embroidery1.jpg') }}" alt="Intricate floral embroidery design" onerror="this.src='https://placehold.co/400x400/e8d5c4/8b4513?text=Floral+Design'">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/embroidery2.jpg') }}" alt="Traditional embroidery pattern" onerror="this.src='https://placehold.co/400x400/d4c4b0/6b4423?text=Traditional+Pattern'">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/embroidery3.jpg') }}" alt="Modern embroidery artwork" onerror="this.src='https://placehold.co/400x400/c9b896/5a3d1a?text=Modern+Art'">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/embroidery4.jpg') }}" alt="Custom logo embroidery" onerror="this.src='https://placehold.co/400x400/bfae8c/4a3010?text=Logo+Embroidery'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p>Welcome to <strong>Creative Designs by Kushi Enterprises</strong>, where passion meets precision in every stitch. With years of experience in the art of embroidery, we have established ourselves as a trusted name in delivering high-quality, custom embroidery solutions.</p>
+                    <p>Our skilled artisans combine traditional techniques with modern technology to create stunning designs that exceed expectations. Whether you need corporate branding, fashion embellishments, or personalized gifts, we bring your vision to life with meticulous attention to detail.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Embroidery craftsmanship at work" onerror="this.src='https://placehold.co/500x400/e8d5c4/8b4513?text=Our+Craftsmanship'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your embroidery project? Contact us today!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Kushi Enterprises, Main Street<br>Your City, State - 123456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@kushienterprises.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Kushi Enterprises</h3>
+                    <p>Creative Designs</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creative Designs by Kushi Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
