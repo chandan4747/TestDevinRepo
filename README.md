@@ -130,4 +130,4 @@ For questions or support regarding this project, please open an issue on GitHub.
 
 ---
 
-Built with care for **Kushi Enterprises** - Transforming fabric into art with exquisite embroidery craftsmanship.
+Built with care for **Creative Designs** - Transforming fabric into art with exquisite embroidery craftsmanship.
